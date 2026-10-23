@@ -1,10 +1,17 @@
 # main.py
-from business_rules import( requires_deposit, calculate_quote, needs_inspection, total_quoted, largest_rental, format_rental_line)
+from business_rules import (
+    calculate_quote,
+    format_rental_line,
+    largest_rental,
+    needs_inspection,
+    requires_deposit,
+    total_quoted,
+)
+
 print("Ridgeline Tool Rental - Rental Report")
 
 inspection_count = 0
 deposit_count = 0
-
 
 
 rentals = [
@@ -17,7 +24,6 @@ rentals = [
     {"customer": "Garza", "daily_rate": 95.00, "days": 5, "contractor": True},
     {"customer": "Hughes", "daily_rate": 200.00, "days": 7, "contractor": False},
 ]
-
 
 
 for rental in rentals:
@@ -33,11 +39,7 @@ for rental in rentals:
         inspection_count += 1
 
 
-
 largest = largest_rental(rentals)
-
-
-
 
 
 print(f"Rentals: {len(rentals)}")

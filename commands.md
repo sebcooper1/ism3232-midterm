@@ -37,6 +37,7 @@ My output here shows that I am working in the virtual environment
 
 ## 3. The Project Structure
 
+
 ## 4. Every function and test
 
 ## 5. Which file prints
